@@ -177,10 +177,12 @@ a{
         -webkit-backdrop-filter: blur(30px);
         transition: right 0.3s ease;
         z-index: -1;
+       
     }
     .list-item {
         padding: 20px;
         color: var(--font-color); /* Light mode font color */
+        font-weight: bold;
     }
 
    
