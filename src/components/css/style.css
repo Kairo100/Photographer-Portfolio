@@ -482,4 +482,18 @@ text-align: center;
         width: 100%;
         
       }
+      .contact{
+        background-image: none;
+        text-align: center;
+      }
+      .contact-div .left{
+        width: 100%;
+      }
+      .contact-div .right .icons{
+        width: 100%;
+        flex-direction: column;
+      }
+      .contact-div{
+        flex-direction: column ;
+      }
 }
