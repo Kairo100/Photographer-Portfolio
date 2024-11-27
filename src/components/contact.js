@@ -17,7 +17,7 @@ export default function Contact() {
           <div className='right'>
           <div className='icons'>
                     <i className='bx bxl-facebook-circle'><a href="#">Facebook</a></i>
-                    <i className='bx bxl-instagram-alt' > <a href="#">Instagram</a></i>
+                    <i className='bx bxl-instagram-alt' ><a href="#">Instagram</a></i>
                     <i className='bx bxl-tiktok'  ><a href="#">Tiktok</a></i>
                 </div>
           </div>

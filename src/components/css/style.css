@@ -408,7 +408,7 @@ text-align: center;
         padding: 80px 20px;
         height: 100vh;
         flex-direction: column;
-        background-image: none;
+        background-image: none;  
       } 
       .icons{
         order: 3;
@@ -485,6 +485,7 @@ text-align: center;
       .contact{
         background-image: none;
         text-align: center;
+      
       }
       .contact-div .left{
         width: 100%;
