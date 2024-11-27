@@ -27,8 +27,8 @@ export default function Nav() {
             <div className={` menu ${toggle ? 'active' : ''}`}>
                 <ul className="list">
                     <li className="list-item"><a href="#about" className="list-link">About</a></li>
-                    <li className="list-item"><a href="#services" className="list-link">Services</a></li>
-                    <li className="list-item"><a href="#blogs" className="list-link">Blogs</a></li>
+                    <li className="list-item"><a href="#gallery" className="list-link">gallery</a></li>
+                    <li className="list-item"><a href="#services" className="list-link">services</a></li>
                     <li className="list-item"><a href="#testimonials" className="list-link">Testemonials</a></li>
                     <li className="list-item"><a href="#contact" className="list-link btn-contact">Contact</a></li>
                 </ul>

@@ -27,7 +27,7 @@ a{
 
 }
 .container{
-  
+    padding:10px 40px
 }
 .bx{
     color: var(--accent-color);
@@ -62,7 +62,8 @@ a{
 }
 .list-item{
     padding: 30px;
-
+    color: var(--accent-color);
+   font-weight: bold;
 }
 .list-link{
     color: var(--accent-font-color);
@@ -147,6 +148,184 @@ a{
     background-color: var(--bg-color);
     border: 1px solid var(--accent-color);
 }
+/*about*/
+.about{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right{
+    width: 50%;
+}
+.about-img{
+    width: 100%;
+}
+.left{
+    width: 50%;
+}
+.section-title{
+    font-size:62px;
+}
+.sectiom-para{
+    width: 80%;
+    line-height: 25px;
+}
+
+/*gallery*/
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+}
+.gallery-sections{
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    font-size: 20px;
+}
+.gallery-section-anchor{
+    color: var(--font-color);
+    border: #ff6600 1px solid;
+    padding: 5px 15px;
+}
+.gallery-section-anchor:first-child{
+    background-color: #ff6600;
+}
+.gallery-section-anchor:hover{
+    background-color: #bb4c03;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.gallery-images{
+width: 30%;
+margin-top: 20px;
+}
+.gallery-images img{
+width: 100%;
+}
+
+
+
+/*services*/
+.services{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.services .section-title {
+text-align: center;
+}
+.ser{
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    gap:30px;
+
+}
+.services-div{
+    background-color: #313131;
+    padding: 15px 60px;
+    border-radius: 40px;
+    text-align: center;
+    width: 30%;
+}
+.services-div h3{
+    color: var(--accent-color);
+}
+.services-div p{
+     
+}
+
+/*testemonials*/
+.testemonials{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.testemonials-div{
+    background-color: #313131;
+    width: 30%;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+.profile-img{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+ 
+}
+.testemonials-div p , .testemonials-div h3{
+    text-align: left;
+}
+.testemonials-div small{
+    text-align: left !important;
+}
+
+/*contact */
+.contact{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/conatct.png);
+    background-position: cover;
+    background-size: cover;
+
+}
+.contact-div{
+    display: flex;
+    justify-content: space-around;
+    column-gap:50px;
+}
+.contact-div .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-div .left input{
+  width: 100%;
+  background-color: #313131;
+  outline: none;
+  border: 1px solid var(--accent-color);
+  padding:10px 30px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.contact-div .left button{
+    margin-top: 10px;
+    outline: none;
+    border: 0;
+    padding: 10px 90px;
+}
+.contact-div .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 15px;
+    padding-bottom: 50px;
+}
+.contact-div .right .icons .bx{
+    font-size: 30px;
+}
+.contact-div .right a{
+    color:white;
+    padding-left: 30px;
+    font-size: 20px;
+}
 
 /*responsive*/
 @media (max-width: 768px) {
@@ -158,7 +337,7 @@ a{
     .btn-menu {
         display: block;
         cursor: pointer;
-        color: var(--accent-font-color);
+     
         font-size: 30px;
     }
     .list {
@@ -181,7 +360,7 @@ a{
     }
     .list-item {
         padding: 20px;
-        color: var(--font-color); /* Light mode font color */
+        color: var(--accent-color); /* Light mode font color */
         font-weight: bold;
     }
 
@@ -198,9 +377,33 @@ a{
 .text h3{
     font-size: 20px;
 }
+.section-title{
+    font-size: 30px;
+  }
+  .sectiom-para{
+    font-size: 14px;
+    width: 100%;
+   
+  }
+  .ser{
+    padding: 0px;
+  }
+  .services-div{
+    width: 100%;
+  }
+  .services p{
+    font-size: 14px;
+  }
+  .testemonials-div{
+    width: 100%;
+  }
 }
 
 @media  (max-width: 450px){
+
+    .container{
+        padding:5px 25px
+    }
     .hero {
         padding: 80px 20px;
         height: 100vh;
@@ -231,5 +434,52 @@ a{
       }
       .hero-img{
         display: block;
+      }
+
+      .about{
+        flex-direction: column;
+      }
+      .left, .right{
+        width: 100%;
+      }
+      .about-img{
+        width: 100%;
+      }
+      .section-title{
+        font-size: 30px;
+      }
+      .sectiom-para{
+        font-size: 14px;
+        width: 100%;
+        line-height: 18px;
+      }
+      .gallery-sections{
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .gallery-section-anchor{
+        font-size: 16px;
+        align-items: center;
+        padding: 5px 15px;
+      }
+      .images{
+        display: flex;
+        flex-direction: column;
+      }
+      .gallery-images{
+        width: 98%;
+      
+      }
+      .gallery-images img{
+        width: 100%;
+      }
+      .ser{
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+      }
+      .services-div{
+        width: 100%;
+        
       }
 }

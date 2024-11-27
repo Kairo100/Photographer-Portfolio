@@ -4,14 +4,19 @@ import ReactDOM from 'react-dom/client';
 import './css/style.css'
 import Nav from './nav.js'
 import hero from './images/hero.png'
+import Gallery from './gallery.js'
+import About from './about.js'
+import Services from './services.js'
+import Testemonials from './testemonials.js'
+import Contact from './contact.js'
 export default function Home() {
   return (
     <>
     <div>
       <Nav/>
-        <div className='section'>
-           <div className='container'>
-             <div className='hero'>
+        <div className='hero' id="home">
+           
+            
                <div>
                  <img src={hero}  alt='hero-img'  className='hero-img'/>
                </div>
@@ -31,8 +36,14 @@ export default function Home() {
                    </div>
                 </div>
              </div>
-           </div>
-        </div>
+           
+        
+
+        <About/>
+        <Gallery />
+        <Services />
+        <Testemonials/>
+        <Contact />
     </div></>
   )
 }
