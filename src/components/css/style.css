@@ -496,4 +496,7 @@ text-align: center;
       .contact-div{
         flex-direction: column ;
       }
+      .contact-div .right .icons a{
+        padding-left: 3px;
+      }
 }
